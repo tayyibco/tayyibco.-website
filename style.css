@@ -245,8 +245,13 @@ footer a:hover {
     padding: 50px 20px;
   }
 }
-.signature {
+.signature-wrap {
+  display: flex;
+  justify-content: flex-start;
   margin-top: 40px;
+}
+ 
+.signature {
   text-align: left;
 }
  
@@ -258,7 +263,7 @@ footer a:hover {
 }
  
 .signature .role {
-  margin: 6px 0 18px;
+  margin: 2px 0 14px;
   font-size: 14px;
   color: #666;
 }
@@ -266,6 +271,6 @@ footer a:hover {
 .signature .brand {
   margin: 0;
   font-size: 15px;
-  font-style: italic;
-  color: #444;
+  font-weight: 700;
+  color: #222;
 }
