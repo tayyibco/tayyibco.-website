@@ -256,12 +256,12 @@ footer a:hover {
 }
 
 .signature .name {
-  font-family: 'Playfair Display', serif;
   font-size: 14px;
-  letter-spacing: 1px;
-  font-weight: 500;
-  margin-bottom: 0;
+  font-weight: 700;
+  font-style: italic;
+  color: #222;
 }
+
 .signature .role {
   font-size: 12px;
   color: #666;
