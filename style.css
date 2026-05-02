@@ -245,3 +245,27 @@ footer a:hover {
     padding: 50px 20px;
   }
 }
+.signature {
+  margin-top: 40px;
+  text-align: left; /* 👈 this fixes the "middle issue" */
+}
+ 
+.signature .name {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+ 
+.signature .role {
+  margin: 6px 0 18px;
+  font-size: 14px;
+  color: #666;
+}
+ 
+.signature .brand {
+  margin: 0;
+  font-size: 15px;
+  font-style: italic;
+  color: #444;
+}
