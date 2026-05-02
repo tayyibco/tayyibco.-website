@@ -9,70 +9,183 @@
   <!-- Premium Google Font -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      background: linear-gradient(135deg, #f7f2f8, #eef6f9, #fffaf5);
+      color: #2b2b2b;
+    }
+
+    /* HEADER */
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: rgba(255,255,255,0.6);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo img {
+      height: 50px;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #a67c52;
+    }
+
+    /* PAGE TITLE */
+    .content {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+
+    /* GRID */
+    .grid {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    /* PRODUCT CARD */
+    .card {
+      width: 300px;
+      padding: 22px;
+      border-radius: 24px;
+
+      background: rgba(255,255,255,0.55);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+
+      border: 1px solid rgba(255,255,255,0.4);
+      box-shadow: 0 25px 60px rgba(0,0,0,0.08);
+
+      transition: 0.4s ease;
+      text-align: center;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 35px 80px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 16px;
+      margin-bottom: 14px;
+    }
+
+    .card h3 {
+      font-family: "Playfair Display", serif;
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #555;
+      margin: 6px 0;
+    }
+
+    /* BUTTONS */
+    .btn {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 10px 18px;
+      border-radius: 30px;
+
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.4);
+
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+
+      transition: 0.3s;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: rgba(255,255,255,0.9);
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 30px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    footer a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #a67c52;
+    }
+
+    /* MOBILE */
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      .content h2 {
+        font-size: 28px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
   <div class="logo">
-  <img src="images/logo.png" alt="TAYYIB CO. Logo">
-</div>
+    <img src="images/logo.png" alt="TAYYIB CO. Logo">
+  </div>
+
   <nav>
-  <a href="index.html">Home</a>
-  <a href="products.html">Products</a>
-  <a href="about.html">About</a>
-  <a href="https://instagram.com/tayyibco.official" target="_blank">Instagram</a>
-</nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="about.html">About</a>
+    <a href="https://instagram.com/tayyibco.official" target="_blank">Instagram</a>
+  </nav>
 </header>
 
 <section class="content">
+
   <h2>Our Products</h2>
 
   <div class="grid">
 
-    <!-- Product 1 -->
+    <!-- PRODUCT 1 -->
     <div class="card">
-      <img src="images/product1.jpg">
-      
+      <img src="images/product1.jpg" alt="Timeless Red">
+
       <h3>TAYYIB CO. Matte Bullet Lipstick</h3>
       <p><strong>Shade:</strong> Timeless Red</p>
       <p>Vegan · Cruelty-Free · Halal Certified</p>
 
-      <a href="https://wa.me/917086433960?text=Hi%20TAYYIB%20CO.%2C%20I%20would%20love%20to%20order%20the%20Matte%20Bullet%20Lipstick%20in%20Timeless%20Red.%20It%20looks%20beautiful%20✨"
-         class="btn">
-         Order on WhatsApp
-      </a>
-
-      <a href="https://rzp.io/l/yourpaymentlink" class="btn">Buy Now</a>
-    </div>
-
-
-    <!-- Product 2 -->
-    <div class="card">
-      <img src="images/product2.jpg">
-      
-      <h3>TAYYIB CO. Matte Bullet Lipstick</h3>
-      <p><strong>Shade:</strong> Bare Bliss</p>
-      <p>Vegan · Cruelty-Free · Halal Certified</p>
-
-      <a href="https://wa.me/917086433960?text=Hi%20TAYYIB%20CO.%2C%20I%20would%20love%20to%20order%20the%20Matte%20Bullet%20Lipstick%20in%20Bare%20Bliss.%20It%20looks%20so%20elegant%20✨"
-         class="btn">
-         Order on WhatsApp
-      </a>
-
-      <a href="https://rzp.io/l/yourpaymentlink" class="btn">Buy Now</a>
-    </div>
-
-  </div>
-
-</section>
-
-<footer>
-  <p>2026 TAYYIB CO.</p>
-  <a href="https://instagram.com/tayyibco.official" target="_blank">
-    Instagram
-  </a>
-</footer>
-
-</body>
-</html>
+      <a
