@@ -249,24 +249,31 @@ footer a:hover {
   text-align: left;
 }
  
+.signature {
+  text-align: left;
+  margin-top: 25px;
+}
+
 .signature p {
   margin: 0;
-  line-height: 1.3;
+  line-height: 1.4;
 }
- 
+
 .signature .name {
   font-family: 'Playfair Display', serif;
   font-size: 18px;
   letter-spacing: 1px;
+  font-weight: 600;
 }
- 
+
 .signature .role {
   font-size: 14px;
   color: #666;
+  margin-top: 2px;
 }
- 
+
 .signature .brand {
-  margin-top: 6px;
+  margin-top: 10px;
   font-size: 15px;
   font-weight: 700;
   font-style: italic;
