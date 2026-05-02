@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+  background: #faf9f7;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+
+.logo img {
+  height: 40px;
+}
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: #666;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #000;
+}
+
+.hero {
+  text-align: center;
+  padding: 140px 20px;
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 48px;
+}
+
+.hero p {
+  color: #777;
+  margin-top: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 28px;
+  border: 1px solid #000;
+  text-decoration: none;
+  color: #000;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.btn:hover {
+  background: #000;
+  color: #fff;
+}
+
+.featured {
+  padding: 80px 50px;
+  text-align: center;
+}
+
+.featured h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+}
+
+.grid {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 260px;
+  background: #fff;
+  padding-bottom: 20px;
+}
+
+.card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin-top: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+.card p {
+  color: #777;
+}
+
+.content {
+  padding: 80px 50px;
+  max-width: 700px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  border-top: 1px solid #eee;
+  background: #fff;
+  color: #777;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  header {
+    padding: 20px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .grid {
+    flex-direction: column;
+  }
+}
