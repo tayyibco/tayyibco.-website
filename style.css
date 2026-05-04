@@ -20,13 +20,10 @@ header {
   justify-content: space-between;
   align-items: center;
 
-  padding: 18px 50px;
+  padding: 20px 40px; /* match index/about */
 
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-
-  border-bottom: 1px solid rgba(0,0,0,0.05);
 
   position: sticky;
   top: 0;
@@ -34,17 +31,16 @@ header {
 }
 
 .logo img {
-  height: 42px;
+  height: 50px; /* match index/about */
 }
 
 nav a {
-  margin-left: 25px;
-  text-decoration: none;
-  color: #555;
-  font-size: 14px;
+  margin: 0 12px;
+  font-size: 15px; /* optional for consistency */
+  color: #333;
+  font-weight: 400;
   transition: 0.3s;
 }
-
 nav a:hover {
   color: #a67c52;
 }
